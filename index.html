@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, maximum-scale=1.0, minimum-scale=1
+		, user-scalable=yes,initial-scale=1.0"
+    />
     <!-- 구글 웹 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +16,7 @@
     />
     <!-- 구글 웹 폰트 -->
     <link rel="stylesheet" href="src//css//index.css" />
+    <link rel="stylesheet" href="src//css/media.css" />
     <title>Viatour</title>
   </head>
   <body>
@@ -43,7 +48,7 @@
 
       <!-- Banner 시작 -->
       <section class="banner">
-        <img src="src/assets/banner/banner.svg" />
+        <img src="src/assets/banner/banner.png" class="banner__back" />
         <article class="banner__contents">
           <h3>Starting at $987</h3>
           <h1>
@@ -57,9 +62,8 @@
           </p>
           <button>View Tour</button>
         </article>
-        <figure class="banner__inner">
-          <img src="src/assets/banner/banner_in.svg" />
-        </figure>
+
+        <img src="src/assets/banner/banner_in.png" class="banner__inner" />
       </section>
       <!-- Banner 끝 -->
 
@@ -71,56 +75,56 @@
         </div>
         <article class="trending__cards">
           <div class="trending__card">
-            <img src="src/assets/trending/paris.svg" />
+            <img src="src/assets/trending/trending_destinations_1.png" />
             <div class="trending__card-desc">
               <p>Paris</p>
               <span>100+ Tours</span>
             </div>
           </div>
           <div class="trending__card">
-            <img src="src/assets/trending/singapore.svg" />
+            <img src="src/assets/trending/trending_destinations_2.png" />
             <div class="trending__card-desc">
               <p>Singapore</p>
               <span>300+ Tours</span>
             </div>
           </div>
           <div class="trending__card">
-            <img src="src/assets/trending/roma.svg" />
+            <img src="src/assets/trending/trending_destinations_3.png" />
             <div class="trending__card-desc">
               <p>Roma</p>
               <span>400+ Tours</span>
             </div>
           </div>
           <div class="trending__card">
-            <img src="src/assets/trending/bangkok.svg" />
+            <img src="src/assets/trending/trending_destinations_4.png" />
             <div class="trending__card-desc">
               <p>Bangkok</p>
               <span>100+ Tours</span>
             </div>
           </div>
           <div class="trending__card">
-            <img src="src/assets/trending/bali.svg" />
+            <img src="src/assets/trending/trending_destinations_5.png" />
             <div class="trending__card-desc">
               <p>Bali</p>
               <span>600+ Tours</span>
             </div>
           </div>
           <div class="trending__card">
-            <img src="src/assets/trending/phuket.svg" />
+            <img src="src/assets/trending/trending_destinations_6.png" />
             <div class="trending__card-desc">
               <p>Phuket</p>
               <span>200+ Tours</span>
             </div>
           </div>
           <div class="trending__card">
-            <img src="src/assets/trending/Tokyo.svg" />
+            <img src="src/assets/trending/trending_destinations_7.png" />
             <div class="trending__card-desc">
               <p>Tokyo</p>
               <span>700+ Tours</span>
             </div>
           </div>
           <div class="trending__card">
-            <img src="src/assets/trending/cappadocia.svg" />
+            <img src="src/assets/trending/trending_destinations_8.png" />
             <div class="trending__card-desc">
               <p>Cappadocia</p>
               <span>900+ Tours</span>
@@ -135,7 +139,7 @@
         <p class="featured__title">Featured Trips</p>
         <article class="featured__cards">
           <div class="freatured__card">
-            <img src="src/assets/freatured/tour1.svg" />
+            <img src="src/assets/freatured/featured_trps_1.png" />
             <div class="featured__card-day">4 days</div>
             <div class="featured__card-desc">
               <span>Paris, France</span>
@@ -147,7 +151,7 @@
             </div>
           </div>
           <div class="freatured__card">
-            <img src="src/assets/freatured/tour2.svg" />
+            <img src="src/assets/freatured/featured_trps_2.png" />
             <div class="featured__card-day">4 days</div>
             <div class="featured__card-desc">
               <span>New York, USA</span>
@@ -159,7 +163,7 @@
             </div>
           </div>
           <div class="freatured__card">
-            <img src="src/assets/freatured/tour3.svg" />
+            <img src="src/assets/freatured/featured_trps_3.png" />
             <div class="featured__card-day">4 days</div>
             <div class="featured__card-desc">
               <span>Paris, France</span>
@@ -171,7 +175,7 @@
             </div>
           </div>
           <div class="freatured__card">
-            <img src="src/assets/freatured/tour4.svg" />
+            <img src="src/assets/freatured/featured_trps_4.png" />
             <div class="featured__card-day">4 days</div>
             <div class="featured__card-desc">
               <span>New York, USA</span>
@@ -189,9 +193,12 @@
       <!-- Why choose Tourz 시작 -->
       <section class="tourz">
         <div class="tourz__inner"></div>
-        <figure class="tourz__inner-img">
-          <img src="src/assets/tourz/balloon.svg" />
-        </figure>
+
+        <img
+          src="src/assets/tourz/main_hot_air _balloon.png"
+          class="tourz__inner-img"
+        />
+
         <article class="tourz__contents">
           <div class="tourz__contents-title">
             <p>Why choose Tourz</p>
@@ -199,7 +206,7 @@
           </div>
           <div class="tourz__contents-cards">
             <div class="tourz__contents-card">
-              <img src="src/assets/icon/icon_ticket.svg" />
+              <img src="src/assets/icon/ticket.png" />
               <div class="tourz__contents-card-des">
                 <p>Ultimate flexibility</p>
                 <span>
@@ -208,14 +215,14 @@
               </div>
             </div>
             <div class="tourz__contents-card">
-              <img src="src/assets/icon/icon_balloon.svg" />
+              <img src="src/assets/icon/hot-air-balloon.png" />
               <div class="tourz__contents-card-des">
                 <p>Memorable experiences</p>
                 <span>Browse and book tours and activities so incredible.</span>
               </div>
             </div>
             <div class="tourz__contents-card">
-              <img src="src/assets/icon/icon_diamond.svg" />
+              <img src="src/assets/icon/diamond.png" />
               <div class="tourz__contents-card-des">
                 <p>Quality at our core</p>
                 <span>High quality standards. Millions of reviews.</span>
@@ -285,22 +292,22 @@
           <p>Our Footprints</p>
           <div class="footprints__contents-items">
             <div class="footprints__contents-item">
-              <img src="src/assets/icon/icon_pin.svg" />
+              <img src="src/assets/icon/total_donations.png" />
               <p>932M</p>
               <span>Total Donations</span>
             </div>
             <div class="footprints__contents-item">
-              <img src="src/assets/icon/icon_road.svg" />
+              <img src="src/assets/icon/campaigns_closed.png" />
               <p>24M</p>
               <span>Campaigns Closed</span>
             </div>
             <div class="footprints__contents-item">
-              <img src="src/assets/icon/icon_person.svg" />
+              <img src="src/assets/icon/happy_people.png" />
               <p>10M</p>
               <span>Happy People</span>
             </div>
             <div class="footprints__contents-item">
-              <img src="src/assets/icon/icon_balloons.svg" />
+              <img src="src/assets/icon/our_volunteers.png" />
               <p>65M</p>
               <span>Our Volunteers</span>
             </div>
@@ -397,7 +404,7 @@
             </div>
             <div class="saying__inner-contents-card">
               <div class="saying__inner-contents-card-script">
-                <img src="src/assets/icon/icon_qm.svg" />
+                <img src="src/assets/icon/qm.png" />
                 <p>Great Work</p>
 
                 <span
@@ -409,7 +416,7 @@
               </div>
               <hr />
               <div class="saying__inner-contents-card-info">
-                <img src="src/assets/icon/icon_profile.svg" />
+                <img src="src/assets/icon/web_designer.png" />
                 <div class="saying__inner-contents-card-info-profile">
                   <span> Courtney Henry </span>
                   <span> Web Designer </span>
@@ -425,12 +432,12 @@
           <div class="saying__inner-brand">
             <span>Trusted by all thelargest travel brands</span>
             <ul>
-              <li><img src="src/assets/icon/icon_amazon.svg" /></li>
-              <li><img src="src/assets/icon/icon_amd.svg" /></li>
-              <li><img src="src/assets/icon/icon_cisco.svg" /></li>
-              <li><img src="src/assets/icon/icon_dropcam.svg" /></li>
-              <li><img src="src/assets/icon/icon_logitech.svg" /></li>
-              <li><img src="src/assets/icon/icon_spotify.svg" /></li>
+              <li><img src="src/assets/icon/amazon.png" /></li>
+              <li><img src="src/assets/icon/amd.png" /></li>
+              <li><img src="src/assets/icon/cisco.png" /></li>
+              <li><img src="src/assets/icon/dropcam.png" /></li>
+              <li><img src="src/assets/icon/logitech.png" /></li>
+              <li><img src="src/assets/icon/spotify.png" /></li>
             </ul>
           </div>
         </article>

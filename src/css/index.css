@@ -17,8 +17,10 @@ body {
 header {
   display: flex;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: space-between;
   width: 1860px;
+  width: 100%;
   height: 89px;
   color: #fff;
   position: absolute;
@@ -28,13 +30,15 @@ header {
 .header__gnb {
   display: flex;
   align-items: center;
+  margin-left: 14%;
 }
 .hedaer__gnb-menus {
   list-style: none;
   display: flex;
   & li {
     margin-right: 30px;
-    font-size: 0.901rem;
+    font-size: 0.901em;
+
     cursor: pointer;
   }
   & li:hover {
@@ -47,13 +51,14 @@ header {
 .header__login {
   display: flex;
   align-items: center;
+  margin-right: 16%;
 }
 .header__login-menus {
   list-style: none;
   display: flex;
   & li {
     margin-right: 30px;
-    font-size: 0.901rem;
+    font-size: 0.901em;
     cursor: pointer;
   }
   & li:last-child {
@@ -64,7 +69,7 @@ header {
     padding: 8px;
     border: none;
     background-color: transparent;
-    font-size: 0.894rem;
+    font-size: 0.894em;
     color: #fff;
     cursor: pointer;
   }
@@ -84,7 +89,6 @@ header {
 .banner {
   position: relative;
   width: 100%;
-  height: 854px;
   z-index: 888;
   display: flex;
   flex-direction: column;
@@ -96,21 +100,21 @@ header {
   left: 15%;
   width: 700px;
   & h3 {
-    font-size: 1.09rem;
+    font-size: 1.09em;
     font-weight: 500;
   }
   & h1 {
-    font-size: 4.375rem;
+    font-size: 4.375em;
     font-weight: 600;
     margin: 0px;
   }
   & p {
-    font-size: 0.916rem;
+    font-size: 0.916em;
     font-weight: 400;
   }
   & button {
-    width: 165px;
-    height: 67px;
+    width: 140px;
+    height: 60px;
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: transparent;
@@ -126,6 +130,7 @@ header {
   position: absolute;
   right: 15%;
   width: 450px;
+  object-fit: cover;
 }
 
 /* Trending Destinations 영역 */
@@ -142,13 +147,13 @@ header {
   align-items: center;
   color: rgba(5, 7, 60, 1);
   & p {
-    font-size: 1.868rem;
+    font-size: 1.868em;
     font-weight: 700;
     margin: 0px;
   }
   & span {
     display: block;
-    font-size: 0.894rem;
+    font-size: 0.894em;
     font-weight: 400;
   }
 }
@@ -176,13 +181,13 @@ header {
 }
 .trending__card-desc {
   & p {
-    font-size: 1.073rem;
+    font-size: 1.073em;
     font-weight: 500;
     margin-bottom: 5px;
     margin-top: 0px;
   }
   & span {
-    font-size: 0.827rem;
+    font-size: 0.827em;
     font-weight: 400;
   }
 }
@@ -198,7 +203,7 @@ header {
 }
 .featured__title {
   color: rgba(5, 7, 60, 1);
-  font-size: 1.875rem;
+  font-size: 1.875em;
   font-weight: 700;
   margin: 0px;
 }
@@ -219,7 +224,7 @@ header {
   left: 50px;
   color: #fff;
   width: 40px;
-  font-size: 0.787rem;
+  font-size: 0.787em;
 }
 .featured__card-desc {
   position: relative;
@@ -228,10 +233,10 @@ header {
   left: 30px;
   color: #fff;
   & span {
-    font-size: 0.768rem;
+    font-size: 0.768em;
   }
   & p {
-    font-size: 1.116rem;
+    font-size: 1.116em;
   }
 }
 .featured__card-price {
@@ -242,11 +247,11 @@ header {
   text-align: right;
   width: 64px;
   & span {
-    font-size: 0.806rem;
+    font-size: 0.806em;
   }
   & p {
     margin: 0px;
-    font-size: 1.019rem;
+    font-size: 1.019em;
   }
 }
 
@@ -283,15 +288,14 @@ header {
 }
 .tourz__contents-title {
   text-align: center;
-
   margin-bottom: 80px;
   & p {
-    font-size: 1.831rem;
+    font-size: 1.831em;
     font-weight: 700;
     margin: 0px;
   }
   & span {
-    font-size: 0.923rem;
+    font-size: 0.923em;
   }
 }
 .tourz__contents-cards {
@@ -309,11 +313,11 @@ header {
 .tourz__contents-card-des {
   width: 230px;
   & p {
-    font-size: 1.108rem;
+    font-size: 1.108em;
     font-weight: 500;
   }
   & span {
-    font-size: 0.923rem;
+    font-size: 0.923em;
   }
 }
 
@@ -331,14 +335,14 @@ header {
   justify-content: space-between;
   align-items: center;
   & p {
-    font-size: 1.868rem;
+    font-size: 1.868em;
     font-weight: 700;
     margin: 0px;
     letter-spacing: 0.2px;
   }
   & span {
     display: block;
-    font-size: 0.894rem;
+    font-size: 0.894em;
     font-weight: 400;
   }
 }
@@ -346,6 +350,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 .popular__card {
@@ -358,12 +363,12 @@ header {
   left: 50px;
   text-align: center;
   & p {
-    font-size: 1.099rem;
+    font-size: 1.099em;
     font-weight: 500;
     margin: 0px;
   }
   & span {
-    font-size: 0.827rem;
+    font-size: 0.827em;
     font-weight: 400;
   }
 }
@@ -397,7 +402,7 @@ header {
   top: 22%;
   left: 15%;
   & p {
-    font-size: 1.875rem;
+    font-size: 1.875em;
     font-weight: 700;
   }
 }
@@ -410,13 +415,13 @@ header {
   width: 135px;
   height: 151px;
   & p {
-    font-size: 2.354rem;
+    font-size: 2.354em;
     font-weight: 700;
     margin: 0px;
     margin-bottom: 10px;
   }
   & span {
-    font-size: 0.916rem;
+    font-size: 0.916em;
     font-weight: 400;
   }
 }
@@ -430,7 +435,7 @@ header {
   color: rgba(5, 7, 60, 1);
 }
 .best__title {
-  font-size: 1.861rem;
+  font-size: 1.861em;
   font-weight: 700;
   display: flex;
   .color-change {
@@ -441,6 +446,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 .best__card {
   width: 300px;
@@ -463,7 +469,7 @@ header {
   margin-top: 20px;
   /* border: 1px solid rebeccapurple; */
   & p {
-    font-size: 0.977rem;
+    font-size: 0.977em;
     font-weight: 500;
     height: 64px;
   }
@@ -475,18 +481,18 @@ header {
     margin-bottom: 15px;
   }
   & span:nth-child(1) {
-    font-size: 0.749rem;
+    font-size: 0.749em;
     color: rgba(113, 113, 113, 1);
   }
   & span:nth-child(4) {
-    font-size: 0.787rem;
+    font-size: 0.787em;
   }
   & span:nth-child(5) {
-    font-size: 0.813rem;
+    font-size: 0.813em;
     margin-left: 155px;
   }
   & span:nth-child(6) {
-    font-size: 0.946rem;
+    font-size: 0.946em;
     font-weight: 500;
     float: right;
   }
@@ -519,7 +525,7 @@ header {
   position: absolute;
   left: 40px;
   & p {
-    font-size: 1.861rem;
+    font-size: 1.861em;
     font-weight: 700;
     width: 277px;
     height: 84px;
@@ -532,12 +538,12 @@ header {
   width: 280px;
   height: 161px;
   & p {
-    font-size: 2.412rem;
+    font-size: 2.412em;
     font-weight: 700;
     margin: 0px;
   }
   & span {
-    font-size: 0.901rem;
+    font-size: 0.901em;
   }
 }
 .saying__inner-contents-card {
@@ -552,11 +558,11 @@ header {
   z-index: 999;
   & p {
     color: rgba(235, 102, 43, 1);
-    font-size: 1.116rem;
+    font-size: 1.116em;
     font-weight: 500;
   }
   & span {
-    font-size: 0.93rem;
+    font-size: 0.93em;
     font-weight: 500;
   }
   & hr {
@@ -584,23 +590,22 @@ header {
     display: block;
   }
   & span:nth-child(1) {
-    font-size: 0.977rem;
+    font-size: 0.977em;
     font-weight: 500;
     margin-bottom: 5px;
   }
   & span:nth-child(2) {
-    font-size: 0.916rem;
+    font-size: 0.916em;
     font-weight: 400;
   }
 }
 .saying__inner-brand {
   width: 100%;
-  height: 130px;
   position: absolute;
   bottom: 0px;
   text-align: center;
   & span {
-    font-size: 0.908rem;
+    font-size: 0.908em;
   }
   & ul {
     list-style: none;
@@ -664,12 +669,12 @@ header {
   align-items: center;
   justify-content: space-between;
   & p {
-    font-size: 1.853rem;
+    font-size: 1.853em;
     font-weight: 700;
     margin: 0px;
   }
   & span {
-    font-size: 0.894rem;
+    font-size: 0.894em;
     font-weight: 400;
   }
 }
@@ -685,7 +690,7 @@ header {
   position: absolute;
   top: 20px;
   left: 20px;
-  font-size: 0.848rem;
+  font-size: 0.848em;
   align-content: center;
 }
 .travel__cards {
@@ -700,7 +705,7 @@ header {
 .travel__card-desc {
   margin-top: 20px;
   & p {
-    font-size: 1.081rem;
+    font-size: 1.081em;
     font-weight: 500;
   }
 }
@@ -709,7 +714,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   & span {
-    font-size: 0.868rem;
+    font-size: 0.868em;
     font-weight: 400;
   }
   & hr {
@@ -745,7 +750,7 @@ header {
   margin: auto;
   border-bottom: 2px solid rgba(235, 102, 43, 0.15);
   & span:nth-child(1) {
-    font-size: 1.231rem;
+    font-size: 1.231em;
     font-weight: 500;
   }
   .color-change2 {
@@ -753,7 +758,7 @@ header {
     color: rgba(235, 102, 43, 1);
   }
   & span:nth-child(2) {
-    font-size: 1.013rem;
+    font-size: 1.013em;
     font-weight: 500;
   }
 }
@@ -762,7 +767,7 @@ header {
   margin-top: 40px;
   justify-content: space-between;
   & p {
-    font-size: 1.25rem;
+    font-size: 1.25em;
     font-weight: 500;
   }
 }
@@ -772,7 +777,7 @@ header {
   padding: 3px 15px;
   & p:nth-child(2),
   p:nth-child(3) {
-    font-size: 0.901rem;
+    font-size: 0.901em;
     font-weight: 400;
   }
 }
@@ -787,7 +792,7 @@ header {
   }
   & li {
     margin-bottom: 20px;
-    font-size: 0.916rem;
+    font-size: 0.916em;
     font-weight: 500;
   }
 }
@@ -802,7 +807,7 @@ header {
   }
   & li {
     margin-bottom: 20px;
-    font-size: 0.923rem;
+    font-size: 0.923em;
     font-weight: 500;
   }
 }
@@ -813,12 +818,12 @@ header {
 }
 .footer__inner-lower-news {
   & p:nth-child(2) {
-    font-size: 0.916rem;
+    font-size: 0.916em;
     font-weight: 400;
     width: 287px;
   }
   & span {
-    font-size: 0.908rem;
+    font-size: 0.908em;
     position: relative;
     right: -280px;
     top: -42px;
@@ -838,7 +843,7 @@ header {
   }
   & li {
     margin-bottom: 20px;
-    font-size: 0.938rem;
+    font-size: 0.938em;
     font-weight: 400;
   }
 }
@@ -851,7 +856,7 @@ header {
   margin-top: 15px;
   color: rgba(5, 7, 60, 1);
   & p {
-    font-size: 0.908rem;
+    font-size: 0.908em;
     font-weight: 400;
     margin: 0px;
   }
