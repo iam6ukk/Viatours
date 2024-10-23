@@ -1,18 +1,10 @@
 @media screen and (min-width: 1024px) {
   .container {
-    max-width: 1860px;
+    /* max-width: 1860px; */
   }
 }
 /* 태블릿 */
 @media screen and (min-width: 768px) and (max-width: 1025px) {
-  .container {
-    max-width: 990px;
-  }
-
-  /* banner 영역 */
-  .banner {
-    width: 100%;
-  }
   .banner__back {
     height: 90vh;
     object-fit: cover;
@@ -20,7 +12,6 @@
   }
   .banner__contents {
     width: 40%;
-    left: 10%;
     & h3 {
       font-size: 0.95em;
     }
@@ -39,24 +30,6 @@
   .banner__inner {
     width: 300px;
     right: 10%;
-  }
-
-  /* trending 영역 */
-  .trending {
-    width: 70%;
-    height: 820px;
-  }
-  .trending__title {
-    & p {
-      font-size: 1.663em;
-    }
-  }
-  .trending__card {
-    margin-bottom: 40px;
-  }
-  .trending__card:nth-child(7),
-  .trending__card:nth-child(78) {
-    margin-bottom: 0px;
   }
 
   /* featured 영역 */
@@ -185,4 +158,86 @@
 }
 /* 모바일 */
 @media screen and (max-width: 767px) {
+  .banner {
+    height: 98.9vh;
+  }
+  .banner__back {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .banner__contents {
+    width: 70%;
+    top: 27%;
+    & h3 {
+      font-size: 0.95em;
+    }
+    & h1 {
+      font-size: 2.875em;
+      margin: 15.2px 0px;
+    }
+    & p {
+      font-size: 0.813em;
+      margin: 15.2px 0px;
+    }
+    & button {
+      width: 100px;
+      height: 50px;
+      font-size: 0.75em;
+    }
+  }
+  .banner__inner {
+    display: none;
+  }
+
+  .trending__title {
+    & p {
+      font-size: 1.538em;
+    }
+    & span {
+      font-size: 0.625em;
+    }
+  }
+  .trending__cards__content:nth-child(7) {
+    margin-bottom: 40px;
+  }
+
+  .popular__title {
+    & p {
+      font-size: 1.538em;
+    }
+    & span {
+      font-size: 0.625em;
+    }
+  }
+  .popular__cards {
+    justify-content: center;
+  }
+  .popular__card {
+    margin-bottom: 40px;
+  }
+  .popular__card:nth-child(6) {
+    margin-bottom: 0px;
+  }
+
+  .footprints {
+    text-align: center;
+  }
+  .footprints__contents {
+    left: 0;
+    & p {
+      font-size: 1.538em;
+    }
+  }
+  .footprints__contents-items {
+    justify-content: space-between;
+  }
+  .footprints__contents-item {
+    & p {
+      font-size: 1.875em;
+    }
+    & span {
+      font-size: 0.75em;
+    }
+  }
 }

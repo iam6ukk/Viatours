@@ -6,20 +6,20 @@ body {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
+  width: 100%;
 }
 .container {
   padding: 1%;
-  width: 1860px;
+  max-width: 1860px;
   margin: 0 auto;
 }
 
 /* Header 영역 */
 header {
   display: flex;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  /* justify-content: space-evenly; */
+  border-bottom: 2px solid rgba(228, 216, 176, 0.2);
   justify-content: space-between;
-  width: 1860px;
+  /* width: 1860px; */
   width: 100%;
   height: 89px;
   color: #fff;
@@ -30,15 +30,14 @@ header {
 .header__gnb {
   display: flex;
   align-items: center;
-  margin-left: 14%;
+  /* margin-left: 14%; */
 }
-.hedaer__gnb-menus {
+.header__gnb__menu {
   list-style: none;
   display: flex;
   & li {
     margin-right: 30px;
     font-size: 0.901em;
-
     cursor: pointer;
   }
   & li:hover {
@@ -51,9 +50,9 @@ header {
 .header__login {
   display: flex;
   align-items: center;
-  margin-right: 16%;
+  /* margin-right: 16%; */
 }
-.header__login-menus {
+.header__login__menu {
   list-style: none;
   display: flex;
   & li {
@@ -77,28 +76,37 @@ header {
     color: rgba(235, 102, 43, 1);
   }
 }
-.header__login-menus-loginBtn {
+.header__login__menu-loginBtn {
   border: 1px solid #fff !important;
   border-radius: 50px;
 }
-.header__login-menus-loginBtn:hover {
+.header__login__menu-loginBtn:hover {
   border: 1px solid rgba(235, 102, 43, 1) !important;
 }
 
 /* Banner 영역 */
 .banner {
   position: relative;
+  /* width: 1860px; */
   width: 100%;
+  height: 90%;
   z-index: 888;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.banner__back {
+  object-fit: cover;
+}
 .banner__contents {
   position: absolute;
   color: #fff;
-  left: 15%;
-  width: 700px;
+  top: 30%;
+  left: 10%;
+  width: 42%;
+  height: 70%;
+
+  max-height: 360px;
   & h3 {
     font-size: 1.09em;
     font-weight: 500;
@@ -113,8 +121,8 @@ header {
     font-weight: 400;
   }
   & button {
-    width: 140px;
-    height: 60px;
+    width: 20%;
+    height: 46px;
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: transparent;
@@ -128,15 +136,17 @@ header {
 }
 .banner__inner {
   position: absolute;
-  right: 15%;
-  width: 450px;
+  right: 10%;
+  width: 25%;
   object-fit: cover;
 }
 
 /* Trending Destinations 영역 */
 .trending {
-  width: 1320px;
-  height: 444px;
+  /* width: 1320px; */
+  width: 70.96%;
+  /* height: 444px; */
+  height: 5.94%;
   margin: auto;
   margin-top: 145px;
   padding: 5px 15px 5px 15px;
@@ -159,19 +169,20 @@ header {
 }
 .trending__cards {
   margin-top: 40px;
-  height: 355px;
+  /* height: 355px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
 }
-.trending__card {
+.trending__cards__content {
   width: 300px;
   height: 152px;
   display: flex;
   align-items: center;
   border: 1px solid rgba(231, 230, 230, 1);
   border-radius: 20px;
+  margin-bottom: 40px;
   & img {
     width: 100px;
     height: 100px;
@@ -179,7 +190,11 @@ header {
     margin-right: 20px;
   }
 }
-.trending__card-desc {
+.trending__cards__content:nth-child(7),
+.trending__cards__content:nth-child(8) {
+  margin-bottom: 0px;
+}
+.trending__cards__content__desc {
   & p {
     font-size: 1.073em;
     font-weight: 500;
@@ -194,7 +209,8 @@ header {
 
 /* Featured Trips 영역 */
 .featured {
-  width: 1576px;
+  /* width: 1576px; */
+  width: 84.73%;
   height: 580px;
   float: right;
   margin-top: 145px;
@@ -323,8 +339,10 @@ header {
 
 /* popular things to do 영역 */
 .popular {
-  width: 1320px;
-  height: 305px;
+  /* width: 1320px; */
+  width: 70.96%;
+  height: 5.94%;
+  /* height: 305px; */
   margin: auto;
   margin-top: 145px;
   padding: 5px 15px 5px 15px;
@@ -395,7 +413,8 @@ header {
   position: relative;
 }
 .footprints__contents {
-  width: 1320px;
+  /* width: 1320px; */
+  width: 70.96%;
   height: 354px;
   text-align: center;
   position: absolute;
@@ -412,7 +431,8 @@ header {
   margin-top: 90px;
 }
 .footprints__contents-item {
-  width: 135px;
+  /* width: 135px; */
+  width: 12.22%;
   height: 151px;
   & p {
     font-size: 2.354em;
@@ -423,6 +443,10 @@ header {
   & span {
     font-size: 0.916em;
     font-weight: 400;
+  }
+  & img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 
