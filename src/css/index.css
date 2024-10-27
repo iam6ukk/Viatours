@@ -8,6 +8,7 @@ body {
   overflow-x: hidden;
   width: 100%;
 }
+
 .container {
   padding: 1%;
   max-width: 1860px;
@@ -18,9 +19,9 @@ body {
 header {
   display: flex;
   border-bottom: 2px solid rgba(228, 216, 176, 0.2);
-  justify-content: space-between;
-  /* width: 1860px; */
-  width: 100%;
+  justify-content: space-around;
+  width: 1860px;
+  /* width: 100%; */
   height: 89px;
   color: #fff;
   position: absolute;
@@ -228,13 +229,13 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.featured__card {
-  position: absolute;
+.featured__cards__card {
+  /* position: absolute;
   height: 450px;
-  display: flex;
+  display: flex; */
 }
 
-.featured__card-day {
+.featured__cards__card__day {
   position: relative;
   top: -420px;
   left: 50px;
@@ -242,7 +243,7 @@ header {
   width: 40px;
   font-size: 0.787em;
 }
-.featured__card-desc {
+.featured__cards__card__desc {
   position: relative;
   width: 280px;
   bottom: 170px;
@@ -255,7 +256,7 @@ header {
     font-size: 1.116em;
   }
 }
-.featured__card-price {
+.featured__cards__card__price {
   position: relative;
   bottom: 190px;
   left: 320px;
@@ -286,7 +287,7 @@ header {
   float: right;
 }
 
-.tourz__inner-img {
+.tourz__inner__img {
   margin: 0px;
   float: left;
   position: absolute;
@@ -302,7 +303,7 @@ header {
   top: 170px;
   left: 460px;
 }
-.tourz__contents-title {
+.tourz__contents__title {
   text-align: center;
   margin-bottom: 80px;
   & p {
@@ -314,11 +315,11 @@ header {
     font-size: 0.923em;
   }
 }
-.tourz__contents-cards {
+.tourz__contents__cards {
   display: flex;
   justify-content: space-around;
 }
-.tourz__contents-card {
+.tourz__contents__cards__card {
   width: 260px;
   height: 200px;
   padding: 40px;
@@ -326,7 +327,7 @@ header {
   background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.tourz__contents-card-des {
+.tourz__contents__cards__card__des {
   width: 230px;
   & p {
     font-size: 1.108em;
@@ -371,10 +372,10 @@ header {
   flex-wrap: wrap;
   margin-top: 40px;
 }
-.popular__card {
+.popular__cards__card {
   position: relative;
 }
-.popular__card-desc {
+.popular__cards__card__desc {
   position: absolute;
   color: #fff;
   bottom: 20px;
@@ -390,13 +391,13 @@ header {
     font-weight: 400;
   }
 }
-.popular__card:nth-child(2) {
-  .popular__card-desc {
+.popular__cards__card:nth-child(2) {
+  .popular__cards__card__desc {
     left: 40px;
   }
 }
-.popular__card:nth-child(5) {
-  .popular__card-desc {
+.popular__cards__card:nth-child(5) {
+  .popular__cards__card__desc {
     left: 44px;
   }
 }
@@ -425,12 +426,13 @@ header {
     font-weight: 700;
   }
 }
-.footprints__contents-items {
+.footprints__contents__items {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 90px;
 }
-.footprints__contents-item {
+.footprints__contents__items__item {
   /* width: 135px; */
   width: 12.22%;
   height: 151px;
@@ -444,16 +446,13 @@ header {
     font-size: 0.916em;
     font-weight: 400;
   }
-  & img {
-    width: 100%;
-    object-fit: cover;
-  }
 }
 
 /* Best of New York 영역 */
 .best {
-  width: 1320px;
-  height: 496px;
+  width: 70.96%;
+  height: 6.6%;
+  /* height: 496px; */
   margin: auto;
   padding: 5px 15px 5px 15px;
   color: rgba(5, 7, 60, 1);
@@ -472,13 +471,13 @@ header {
   margin-top: 40px;
   flex-wrap: wrap;
 }
-.best__card {
+.best__cards__card {
   width: 300px;
   height: 408px;
   border: 1px solid #ddd;
   border-radius: 12px;
 }
-.best__card-img {
+.best__cards__card__img {
   width: 300px;
   height: 212px;
   & img {
@@ -487,7 +486,7 @@ header {
     border-radius: 12px 12px 0px 0px;
   }
 }
-.best__card-desc {
+.best__cards__card__desc {
   width: 90%;
   margin: auto;
   margin-top: 20px;
@@ -538,16 +537,18 @@ header {
   position: relative;
   top: 88px;
 }
-.saying__inner-contents {
+.saying__inner__contents {
+  height: 100%;
   display: flex;
   justify-content: space-around;
   position: relative;
 }
-.saying__inner-contents-desc {
+.saying__inner__contents__desc {
   width: 550px;
   height: 281px;
   position: absolute;
   left: 40px;
+
   & p {
     font-size: 1.861em;
     font-weight: 700;
@@ -555,10 +556,11 @@ header {
     height: 84px;
   }
 }
-.saying__inner-contents-desc-review {
+.saying__inner__contents__desc__review {
   display: flex;
+  flex-wrap: wrap;
 }
-.saying__inner-contents-desc-review-text {
+.saying__inner__contents__desc__review__text {
   width: 280px;
   height: 161px;
   & p {
@@ -570,7 +572,7 @@ header {
     font-size: 0.901em;
   }
 }
-.saying__inner-contents-card {
+.saying__inner__contents__card {
   width: 410px;
   height: 230px;
   background-color: #fff;
@@ -596,7 +598,7 @@ header {
     border: 0;
   }
 }
-.saying__inner-contents-card-script {
+.saying__inner__contents__card__script {
   position: relative;
   & img {
     position: absolute;
@@ -604,11 +606,11 @@ header {
     right: -10px;
   }
 }
-.saying__inner-contents-card-info {
+.saying__inner__contents__card__info {
   display: flex;
   align-items: center;
 }
-.saying__inner-contents-card-info-profile {
+.saying__inner__contents__card__info__profile {
   margin-left: 20px;
   & span {
     display: block;
@@ -623,7 +625,7 @@ header {
     font-weight: 400;
   }
 }
-.saying__inner-brand {
+.saying__inner__brand {
   width: 100%;
   position: absolute;
   bottom: 0px;
@@ -635,12 +637,13 @@ header {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 50px;
   }
 }
 
 /* rotated card */
-.saying__inner-contents-rotated1 {
+.saying__inner__contents__rotated1 {
   width: 380px;
   height: 200px;
   border-radius: 24px;
@@ -653,7 +656,7 @@ header {
   z-index: 888;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.saying__inner-contents-rotated2 {
+.saying__inner__contents__rotated2 {
   width: 340px;
   height: 180px;
   border-radius: 24px;
@@ -666,7 +669,7 @@ header {
   z-index: 777;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.saying__inner-contents-rotated3 {
+.saying__inner__contents__rotated3 {
   width: 340px;
   height: 160px;
   border-radius: 24px;
@@ -681,7 +684,8 @@ header {
 
 /* Travel Articles 영역 */
 .travel {
-  width: 1320px;
+  /* width: 1320px; */
+  width: 70.96%;
   height: 510px;
   margin: auto;
   margin-top: 145px;
@@ -702,10 +706,10 @@ header {
     font-weight: 400;
   }
 }
-.travel__card-img {
+.travel__cards__card__img {
   position: relative;
 }
-.travel__card-category {
+.travel__cards__card__category {
   background-color: #fff;
   border-radius: 200px;
   width: 62px;
@@ -720,20 +724,21 @@ header {
 .travel__cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
-.travel__card {
+.travel__cards__card {
   width: 410px;
   height: 422px;
 }
-.travel__card-desc {
+.travel__cards__card__desc {
   margin-top: 20px;
   & p {
     font-size: 1.081em;
     font-weight: 500;
   }
 }
-.travel__card-desc-title {
+.travel__cards__card__desc__title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -754,18 +759,19 @@ header {
 /* footer 영역 */
 .footer {
   margin-top: 145px;
-  width: 1860px;
+  width: 100%;
   height: 655px;
   border-radius: 24px;
   color: rgba(5, 7, 60, 1);
   background-color: rgba(235, 102, 43, 0.05);
 }
 .footer__inner {
-  width: 1320px;
+  /* width: 1320px; */
+  width: 70.96%;
   height: 100%;
   margin: auto;
 }
-.footer__inner-upper {
+.footer__inner__upper {
   width: 1290px;
   height: 185px;
   display: flex;
@@ -786,16 +792,17 @@ header {
     font-weight: 500;
   }
 }
-.footer__inner-lower {
+.footer__inner__lower {
   display: flex;
   margin-top: 40px;
   justify-content: space-between;
+  flex-wrap: wrap;
   & p {
     font-size: 1.25em;
     font-weight: 500;
   }
 }
-.footer__inner-lower-contact {
+.footer__inner__lower__contact {
   width: 400px;
   height: 390px;
   padding: 3px 15px;
@@ -805,7 +812,7 @@ header {
     font-weight: 400;
   }
 }
-.footer__inner-lower-company {
+.footer__inner__lower__company {
   height: 390px;
   width: 128px;
   padding: 3px 15px;
@@ -820,7 +827,7 @@ header {
     font-weight: 500;
   }
 }
-.footer__inner-lower-support {
+.footer__inner__lower__support {
   height: 390px;
   width: 128px;
   padding: 3px 15px;
@@ -835,12 +842,12 @@ header {
     font-weight: 500;
   }
 }
-.footer__inner-lower-news-apps {
+.footer__inner__lower__news__apps {
   height: 390px;
   width: 330px;
   padding: 3px 15px;
 }
-.footer__inner-lower-news {
+.footer__inner__lower__news {
   & p:nth-child(2) {
     font-size: 0.916em;
     font-weight: 400;
@@ -860,7 +867,7 @@ header {
     padding: 0 20px;
   }
 }
-.footer__inner-lower-apps {
+.footer__inner__lower__apps {
   margin-top: 26px;
   & ul {
     list-style: none;
@@ -874,6 +881,7 @@ header {
 
 .copyright {
   width: 100%;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
