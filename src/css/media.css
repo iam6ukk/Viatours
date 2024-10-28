@@ -1,25 +1,38 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .container {
     /* max-width: 1860px; */
   }
 }
 /* 태블릿 */
-/* @media screen and (min-width: 768px) and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0;
+  }
+  header {
+    display: none;
+  }
+  .banner {
+    height: 100vh;
+  }
   .banner__back {
-    height: 90vh;
+    height: 100vh;
     object-fit: cover;
-    border-radius: 12px;
   }
   .banner__contents {
-    width: 40%;
+    width: 32%;
+    max-height: 50%;
+    top: 30%;
     & h3 {
-      font-size: 0.95em;
+      font-size: 1.063em;
+      margin: 20px 0px;
     }
     & h1 {
-      font-size: 3.125em;
+      font-size: 3em;
+      margin: 20px 0px;
     }
     & p {
-      font-size: 0.813em;
+      font-size: 0.875em;
+      margin: 20px 0px;
     }
     & button {
       width: 100px;
@@ -28,133 +41,25 @@
     }
   }
   .banner__inner {
-    width: 300px;
-    right: 10%;
-  }
-
-
-  .featured {
-    width: 83%;
-  }
-  .featured__title {
-    font-size: 1.663em;
-  }
-
-
-  .tourz {
-    width: 100%;
-    height: 717px;
-  }
-  .tourz__inner {
-    width: 70%;
-    height: 100%;
-  }
-  .tourz__inner-img {
-    width: 50%;
-    margin: 106px 0px;
-  }
-  .tourz__contents {
-    width: 72%;
-    left: 180px;
-    height: 320px;
-  }
-  .tourz__contents-title {
-    & p {
-      font-size: 1.663em;
-    }
-    & span {
-      font-size: 0.85em;
-    }
-  }
-  .tourz__contents-cards {
-    justify-content: space-between;
-  }
-  .tourz__contents-card {
-    width: 180px;
-    height: 140px;
-    padding: 20px;
-    & img {
-      width: 40px;
-      height: 40px;
-      object-fit: cover;
-    }
-  }
-  .tourz__contents-card-des {
-    width: 160px;
-    & p {
-      font-size: 0.85em;
-    }
-    & span {
-      font-size: 0.725em;
-    }
-  }
-
-
-  .popular {
-    width: 70%;
-    height: 565px;
-  }
-  .popular__card {
-    margin-bottom: 40px;
-  }
-  .popular__card:nth-child(4),
-  .popular__card:nth-child(5),
-  .popular__card:nth-child(6) {
-    margin-bottom: 0px;
-  }
-
-
-  .footprints__contents {
-    width: 72%;
-    & p {
-      font-size: 1.663em;
-    }
-  }
-
-  .footprints__contents-item {
-    & p {
-      font-size: 2.088em;
-    }
-  }
-
-  .best {
-    width: 70%;
-    height: 930px;
-  }
-  .best__title {
-    font-size: 1.663em;
-  }
-  .best__card:nth-child(1),
-  .best__card:nth-child(2) {
-    margin-bottom: 40px;
-  }
-
-  .saying__inner {
-    width: 90%;
-  }
-  .saying__inner-contents-desc {
-    width: 40%;
-    left: 0;
-    & p {
-      font-size: 1.663em;
-    }
-  }
-  .saying__inner-contents-desc-review-text {
-    width: 230px;
-    height: 140px;
-    & p {
-      margin: 0px;
-    }
-  }
-  .saying__inner-contents-card {
     width: 30%;
   }
-  .saying__inner-brand {
-    & ul {
-      justify-content: space-between;
+
+  .trending__cards {
+    width: 100%;
+  }
+  .trending__cards__content {
+    width: 46%;
+    height: 150px;
+    margin-bottom: 10%;
+    & img {
+      width: 80px;
+      height: 80px;
+      margin-left: 13px;
+      margin-right: 13px;
     }
   }
-} */
+}
+
 /* 모바일 */
 @media screen and (max-width: 767px) {
   .container {
@@ -209,8 +114,12 @@
       font-size: 0.625em;
     }
   }
+  .trending__cards {
+    width: 100%;
+  }
   .trending__cards__content {
-    width: 155px;
+    /* width: 155px; */
+    width: 46%;
     height: 100px;
     margin-bottom: 10%;
     & img {
@@ -227,9 +136,6 @@
     & span {
       font-size: 0.563em;
     }
-  }
-  .trending__cards__content:nth-child(7) {
-    margin-bottom: 40px;
   }
 
   .featured {
