@@ -1,15 +1,38 @@
-@media screen and (min-width: 1025px) {
-  .container {
-    /* max-width: 1860px; */
+@media screen and (min-width: 1280px) {
+  .m-nav {
+    display: none;
   }
 }
 /* 태블릿 */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .container {
     padding: 0;
   }
+
   header {
     display: none;
+  }
+  .m-nav {
+    display: block;
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    z-index: 9999;
+    right: 10px;
+    top: 10px;
+    & ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+    & li {
+      width: 100%;
+      border: 1.6px solid #fff;
+      margin-bottom: 5px;
+    }
+    & li:nth-last-child() {
+      margin-bottom: 0px;
+    }
   }
   .banner {
     height: 100vh;
@@ -17,6 +40,7 @@
   .banner__back {
     height: 100vh;
     object-fit: cover;
+    border-radius: 0px;
   }
   .banner__contents {
     width: 32%;
@@ -58,6 +82,143 @@
       margin-right: 13px;
     }
   }
+  .featured {
+    width: 70.96%;
+    height: 890px;
+    float: none;
+    margin: auto;
+    margin-top: 145px;
+    padding: 5px 15px 5px 15px;
+  }
+  .featured__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .featured__cards__card {
+    width: 48%;
+    height: 380px;
+    margin-bottom: 40px;
+    & img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 24px;
+    }
+  }
+  .featured__cards__card__desc {
+    width: 75%;
+    /* bottom: 190px; */
+    bottom: 55%;
+  }
+  .featured__cards__card__price {
+    left: 70%;
+  }
+  .featured__cards__card:nth-last-child() {
+    margin-bottom: 0px;
+  }
+
+  .tourz {
+    margin-top: 145px;
+  }
+  .tourz__inner {
+    width: 100%;
+    height: 100%;
+  }
+  .tourz__inner__img {
+    display: none;
+  }
+  .tourz__contents {
+    width: 90%;
+    height: 86%;
+    top: 0px;
+    left: 2.6%;
+    align-content: center;
+  }
+  .tourz__contents__cards {
+    justify-content: space-between;
+  }
+  .tourz__contents__cards__card {
+    width: 26%;
+    height: 200px;
+    padding: 20px;
+    & img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+  }
+  .popular__cards__card {
+    margin-bottom: 10%;
+  }
+  .best__cards__card {
+    margin-bottom: 10%;
+  }
+
+  .saying__inner {
+    width: 94%;
+    top: 50px;
+    height: 86%;
+  }
+  .saying__inner__contents {
+    width: 90%;
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  .travel {
+    height: 900px;
+  }
+  .travel__cards {
+    width: 100%;
+  }
+  .travel__cards__card {
+    width: 48%;
+    height: 30%;
+    margin-bottom: 10%;
+  }
+  .travel__cards__card__img {
+    & img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .saying__inner__contents__card {
+    right: 15px;
+  }
+  .saying__inner__contents__rotated1 {
+    right: 5px;
+    top: 30px;
+  }
+  .saying__inner__contents__rotated2 {
+    right: -5px;
+    top: 50px;
+  }
+  .saying__inner__contents__rotated3 {
+    right: -10px;
+    top: 65px;
+  }
+
+  .footer__inner {
+    width: 84.73%;
+  }
+  .footer__inner__upper {
+    width: 98%;
+    & span:nth-child(1) {
+      width: 400px;
+    }
+  }
+  .footer__inner__lower__contact {
+    width: 48%;
+    height: 150px;
+    & p:nth-child(2),
+    p:nth-child(3) {
+      font-size: 0.825em;
+    }
+  }
+  .footer__inner__lower__company,
+  .footer__inner__lower__support {
+    display: none;
+  }
 }
 
 /* 모바일 */
@@ -65,16 +226,40 @@
   .container {
     padding: 0;
   }
+
+  .m-nav {
+    display: block;
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    z-index: 9999;
+    right: 10px;
+    top: 10px;
+    & ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+    & li {
+      width: 100%;
+      border: 1.6px solid #fff;
+      margin-bottom: 5px;
+    }
+    & li:nth-last-child() {
+      margin-bottom: 0px;
+    }
+  }
+
   header {
     display: none;
   }
-
   .banner {
     height: 100vh;
   }
   .banner__back {
     height: 100vh;
     object-fit: cover;
+    border-radius: 0px;
     /* height: 100%;
     object-fit: cover;
     border-radius: 12px; */
@@ -175,7 +360,7 @@
     }
   }
   .featured__cards__card__price {
-    left: 250px;
+    left: 75%;
   }
   .featured__cards__card:nth-last-child() {
     margin-bottom: 0px;
@@ -503,7 +688,8 @@
     & span {
       font-size: 0.908em;
       position: relative;
-      right: -250px;
+      /* right: -250px; */
+      right: -85%;
       top: -32px;
     }
   }
